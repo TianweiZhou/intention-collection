@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("/img/dark-sky.jpg") no-repeat no-repeat left top;
+  background-size: cover;
+  background-color: #055088;
+  background-attachment: fixed;
+  font-family: 'Bahnschrift', sans-serif;
+}
+
+nav {
+  height: 40px;
+  width: 100%;
+}
+
+nav img {
+  margin-top: 5px;
+  height: 35px;
+}
+
+main {
+  top: 40px;
+  /* Header Height */
+  width: 100%;
+  height: calc(100% - 40px);
+}
+
+main #opacity-background {
+  margin: auto;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-radius: 20px;
+  opacity: 0.2;
+}
+
+main #form-container {
+  margin: auto;
+  width: 310px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+main #form-container h3 {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+}
+
+main #form-container #success-h3 {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+main #form-container #check-svg {
+  color: #28c76f;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 25px;
+}
+
+main #form-container form input {
+  height: 30px;
+  width: 285px;
+  border: 0;
+  border-radius: 15px;
+  line-height: 16px;
+  padding: 0 0 0 15px;
+  z-index: -1;
+}
+
+main #form-container form button {
+  width: 80px;
+  height: 30px;
+  color: lightgrey;
+  background-color: #055088;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 18px;
+  padding: 0;
+  position: absolute;
+  left: 230px;
+}
+
+main #form-container form button:hover {
+  color: white;
+  background-color: #023967;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 18px;
+}
+
+main #form-container form button #send-svg {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  bottom: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+main #form-container form #validation-result {
+  color: red;
+  font-size: x-small;
+  padding-left: 15px;
+}
+/*# sourceMappingURL=style.css.map */

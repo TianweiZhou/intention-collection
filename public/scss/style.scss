@@ -1,0 +1,128 @@
+$mainColor: #055088;
+$inputHeight: 30px;
+$borderRadius: 15px;
+$navHeight: 40px;
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url("/img/dark-sky.jpg") no-repeat no-repeat left top;
+    background-size: cover;
+    background-color: $mainColor;
+    background-attachment: fixed;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+nav {
+    height: $navHeight;
+    width: 100%;
+
+    img {
+        margin-top: 5px;
+        height: 35px;
+    }
+}
+
+main {
+    top: $navHeight;
+    /* Header Height */
+    width: 100%;
+    height: calc(100% - $navHeight);
+
+    #opacity-background {
+        margin: auto;
+        width: 500px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-radius: 20px;
+        opacity: 0.2;
+    }
+
+    #form-container {
+        margin: auto;
+        width: 310px;
+        height: 80px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        h3 {
+            color: white;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        #success-h3 {
+            display: inline-block;
+            margin-left: 10px;
+            margin-bottom: 0;
+        }
+
+        #check-svg {
+            color: #28c76f;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        form {
+
+            input {
+                height: $inputHeight;
+                width: 285px;
+                border: 0;
+                border-radius: $borderRadius;
+                line-height: 16px;
+                padding: 0 0 0 15px;
+                z-index: -1;
+            }
+
+            button {
+                width: 80px;
+                height: $inputHeight;
+                color: lightgrey;
+                background-color: $mainColor;
+                border: none;
+                border-radius: $borderRadius;
+                text-align: center;
+                cursor: pointer;
+                line-height: 18px;
+                padding: 0;
+                position: absolute;
+                left: 230px;
+
+                &:hover {
+                    color: white;
+                    background-color: #023967;
+                    border: none;
+                    border-radius: 15px;
+                    text-align: center;
+                    cursor: pointer;
+                    line-height: 18px;
+                }
+
+                #send-svg {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    bottom: 4px;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            #validation-result {
+                color: red;
+                font-size: x-small;
+                padding-left: 15px;
+            }
+        }
+    }
+}
